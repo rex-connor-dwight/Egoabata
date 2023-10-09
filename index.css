@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,900;1,100;1,200;1,300;1,500;1,900&display=swap');
+@font-face {
+    font-family: "Arcon";
+    src: url(Fonts/Arcon-Regular.otf);
+    src: url(Fonts/Arcon-Rounded-Regular.otf);
+}
+
+
+:root{
+    --lemon: #adf109;
+    --lightgray: #39485d;
+    --blue: #011025;
+    --AD:#e2f7fb;
+    --lightblue:#5e6b73;
+    --gradient: linear-gradient(90deg, var(--darkgreen), var(--lightgreen));
+}
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--AD);
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    background: var(--lightgray);
+    padding: 3vh 5%;
+    color: var(--AD);
+    position: fixed;
+    width: 91%;
+}
+
+header a{
+    color: var(--AD);
+    text-decoration: none;
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 100vh;
+    background: url(Homeimages/background.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.Home::-webkit-scrollbar {
+    display: none;
+  }
+
+.homeTXT{
+    width: 60%;
+    margin-right: 10%;
+}
+
+.homeTXT h1{
+    margin-bottom: 2vh;
+    font-size: 5.5vw;
+    color: var(--lemon);
+    font-weight: 300;
+    font-family: Arcon;
+}
+
+.homeTXT h1 span{
+    margin-bottom: 4vh;
+    font-size: 8.1vw;
+    font-weight: 700;
+}
+
+.homeTXT p{
+    font-size: 1vw;
+    font-weight: 400;
+    margin-bottom: 3vh;
+}
+
+.homeTXT button{
+    color: var(--blue);
+    background: var(--lemon);
+    border: 0;
+    border-radius: .1rem;
+    padding: .8rem 1.5rem;
+    font-size: .6rem;
+    font-weight: 600;
+}
+
+.homeForm{
+    width: 40%;
+    margin-left: 15%;
+}
+
+.homeForm form{
+    display: flex;
+    flex-direction: column;
+    background: var(--lightblue);
+    border-radius: .4rem;
+    padding: 2rem;
+}
+
+.homeForm form h2{
+    text-align: center;
+    font-size: 1.6vw;
+    font-weight: 800;
+    color: var(--AD);
+}
+
+.homeForm form p{
+    text-align: center;
+    color: var(--lemon);
+    font-size: .8vw;
+    font-weight: 400;
+    margin-top: .5rem;
+}
+
+.homeForm form input{
+    margin-top: 1.4rem;
+    padding: 1rem .4rem;
+    border-radius: .2rem;
+    border: 0;
+    color: var(--blue);
+    background: var(--AD);
+}
+
+.homeForm form textarea{
+    margin-top: 1.4rem;
+    padding: 1rem .4rem;
+    border-radius: .2rem;
+    border: 0;
+    color: var(--blue);
+    height: 5vw;
+    background: var(--AD);
+}
+
+.homeForm form button{
+    color: var(--blue);
+    background: var(--lemon);
+    border: 0;
+    border-radius: .1rem;
+    padding: .8rem 1.5rem;
+    font-size: .6rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+
+.Manifesto{
+    display: flex;
+    flex-direction: column;
+    color: var(--blue);
+    height: 90vh;
+    background: var(--AD);
+    padding-bottom: 1rem;
+}
+
+.mfestTop{
+    background: url(Homeimages/manifestoHeader.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2.5rem 5%;
+}
+
+.mfestTop h1{
+    font-size: 2vw;
+    font-weight: 400;
+    font-family: Arcon;
+}
+
+.mfestbody{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.mfestleft{
+    width: 35%;
+    background: url(Homeimages/manifestoSideimg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 12vw;
+    padding: 50.5vh 0vw 2vh 0vw;
+}
+
+.mfestleft p{
+    font-size: .8vw;
+    font-weight: 400;
+    padding: 0 5vw;
+    font-style: italic;
+    font-family: Arcon;
+}
+
+.mfestleft h3{
+    font-size: 1.8vw;
+    font-weight: 700;
+    padding: 0 5vw;
+    margin-top: 1rem;
+    color: var(--lemon);
+}
+
+.mfestright{
+    width: 65%;
+}
+
+.mfestright p{
+    margin: 3rem 3rem 0rem 3rem;
+    color: var(--blue);
+    font-size: 1vw;
+    font-weight: 400;
+    font-family: Arcon;
+}
+
+footer{
+    height: 5vw;
+    background: var(--blue);
+}
+
+
+.bio{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    overflow: scroll;
+    width: 100%;
+}
+
+.bioBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    background: var(--blue);
+    background-size: cover;
+    background-position: center;
+    margin: 0 0 0vw -5vw;
+}
+
+.bio::-webkit-scrollbar {
+    display: none;
+  }
+
+.biodiv{
+    width: 70%;
+    background: var(--AD);
+    color: var(--blue);
+    padding: 2rem;
+    border-radius: .4rem;
+
+}
+
+.biodiv button{
+    background: 0;
+    border: 0;
+    margin-left: 65vw;
+    
+}
+
+.biodiv img{
+    max-width: 3vw;
+    height: 3vw;
+    
+}
+
+.biodiv p, h2{
+    color: var(--blue);
+}
+
+.biodiv p{
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: Arcon;
+    margin-top: 2rem;
+}
+
+.biodiv h2{
+    font-size: 2.8vw;
+    font-weight: 700;
+    font-family: Arcon;
+    margin-top: .5rem;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+        background: var(--lightgray);
+        padding: 2.5vh 5%;
+        color: var(--AD);
+    }
+    
+    header a{
+        color: var(--AD);
+        text-decoration: none;
+        font-size: 4vw;
+        font-weight: 300;
+    }
+    
+    .Home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 8%;
+        height: 100%;
+        background: url(Homeimages/mBG.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .homeTXT{
+        width: 100%;
+        margin-right: 0%;
+        margin-top: 3rem;
+    }
+    
+    .homeTXT h1{
+        margin-top: 5vh;
+        margin-bottom: 1vh;
+        font-size: 12.5vw;
+        color: var(--lemon);
+        font-weight: 300;
+        font-family: Arcon;
+    }
+    
+    .homeTXT h1 span{
+        margin-bottom: 4vh;
+        font-size: 18.1vw;
+        font-weight: 700;
+    }
+    
+    .homeTXT p{
+        font-size: 2.5vw;
+        font-weight: 400;
+        margin-bottom: 3vh;
+    }
+    
+    .homeTXT button{
+        color: var(--blue);
+        background: var(--lemon);
+        border: 0;
+        border-radius: .1rem;
+        padding: .8rem 1.5rem;
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    
+    .homeForm{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    
+    .homeForm form{
+        display: flex;
+        flex-direction: column;
+        background: var(--lightblue);
+        border-radius: .4rem;
+        padding: 2rem;
+    }
+    
+    .homeForm form h2{
+        text-align: center;
+        font-size: 4.6vw;
+        font-weight: 800;
+    }
+    
+    .homeForm form p{
+        text-align: center;
+        color: var(--lemon);
+        font-size: 2.1vw;
+        font-weight: 400;
+        margin-top: .3rem;
+    }
+    
+    .homeForm form input{
+        margin-top: 1.4rem;
+        padding: 1rem .4rem;
+        border-radius: .2rem;
+        border: 0;
+        color: var(--blue);
+        background: var(--AD);
+    }
+    
+    .homeForm form textarea{
+        margin-top: 1.4rem;
+        padding: 1rem .4rem;
+        border-radius: .2rem;
+        border: 0;
+        color: var(--blue);
+        height: 5vw;
+        background: var(--AD);
+    }
+    
+    .homeForm form button{
+        color: var(--blue);
+        background: var(--lemon);
+        border: 0;
+        border-radius: .1rem;
+        padding: .8rem 1.5rem;
+        font-size: .9rem;
+        font-weight: 600;
+        margin-top: 2rem;
+    }
+
+
+
+    .Manifesto{
+        display: flex;
+        flex-direction: column;
+        color: var(--blue);
+        height: 100%;
+        background: var(--AD);
+    }
+    
+    .mfestTop{
+        background: url(Homeimages/manifestoHeader.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 2rem 5%;
+    }
+    
+    .mfestTop h1{
+        font-size: 5vw;
+        font-weight: 400;
+        font-family: Arcon;
+    }
+    
+    .mfestbody{
+        display: flex;
+        flex-direction: column;
+        align-items: top;
+        justify-content: space-between;
+    }
+    
+    .mfestleft{
+        width: 100%;
+        background: url(Homeimages/manifestoSideimg.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 12vw;
+        padding: 49vh 0vw 6vh 0vw;
+    }
+    
+    .mfestleft p{
+        font-size: 2vw;
+        font-weight: 400;
+        padding: 0 12%;
+        font-style: italic;
+        font-family: Arcon;
+    }
+    
+    .mfestleft h3{
+        font-size: 3.8vw;
+        font-weight: 700;
+        padding: 0 12%;
+        margin-top: 1rem;
+        color: var(--lemon);
+    }
+    
+    .mfestright{
+        width: 100%;
+        margin: 0;
+    }
+
+    .mfestright p{
+        color: var(--blue);
+        font-size: 3vw;
+        font-weight: 400;
+        padding: 2rem 0% 2rem 0%;
+        text-align: justify;
+        font-family: Arcon;
+        margin: 1.5rem;
+    }
+
+
+    .bio{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        height: 100vh;
+        overflow: scroll;
+        width: 100%;
+    }
+
+    .bioBody{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        height: 100%;
+        background: var(--blue);
+        background-size: cover;
+        background-position: center;
+        margin: -2rem 0 0 0;
+    }
+
+    .bio::-webkit-scrollbar {
+        display: none;
+      }
+
+    .biodiv{
+        width: 70%;
+        background: var(--AD);
+        color: var(--blue);
+        padding: 2rem;
+        border-radius: .4rem;
+
+    }
+
+    .biodiv button{
+        background: 0;
+        border: 0;
+        margin-left: 64vw;
+        margin-top: -8rem;
+
+    }
+
+    .biodiv img{
+        max-width: 6vw;
+        height: 6vw;
+
+    }
+
+    .biodiv p, h2{
+        color: var(--blue);
+    }
+
+    .biodiv p{
+        font-size: 3.5vw;
+        font-weight: 400;
+        font-family: Arcon;
+        margin-top: 2rem;
+    }
+
+    .biodiv h2{
+        font-size: 6vw;
+        font-weight: 700;
+        font-family: Arcon;
+        margin-top: .5rem;
+    }
+    }
+
